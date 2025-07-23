@@ -3,14 +3,6 @@
 
 [DesignFirst](https://designfirst.ee) offers the world's first TPM update service - EnactTrust.
 
-## Our Story
-
-The original concept of EnactTrust emerged during 2017 and involves the largest trade fair for embedded systems - "Embedded World" in Nuremberg, Germany. For the very first time there was a dedicated Trusted Platform Module (TPM) track. Presenters included managers from ARM, OnSemi and other industry leaders. Surprisingly, no one from the five speakers talked about Trusted Computing or mentioned the use of TPM 2.0 modules.
-
-Today, TPM 2.0 modules are used everywhere and we are seeing the rising adoption of TPM 2.0 in embedded systems: EV Chargers, Smart Metering, etc.
-
-In early 2018, DesignFirst was founded. Our company solve the struggles with using hardware security and Trusted Platform Modules.
-
 ## Easy updates for Trusted Platform Modules 2.0
 
 EnactTrust performs TPM 2.0 updates without manual steps.
@@ -35,12 +27,12 @@ EnactTrust comes in two flavors:
 
 For example:
 
-* FreeRTOS-based system requires a commercial license. We provid an update component tailored to your system and without external dependencies.
+* FreeRTOS-based system requires a commercial license. We provide an update component tailored to your system and without external dependencies.
 * Linux-based system can use either the open-source variant (here) or purchase the embedded component that requires no external libraries.
 
-### Updating devices without connectivity
+## TPM updates without internet connectivity
 
-We offer update bundles for devices without internet connectivity. Contact us at our [email](mailto:info@enacttrust.com) for update bundles tailored to your systems.
+We offer update bundles for systems without internet connectivity. Contact us at our [email](mailto:info@enacttrust.com) for update bundles tailored to your systems.
 
 ## Quick start for Linux
 
@@ -109,10 +101,16 @@ By default `EnactTrust` works without the need for a user account.
 ### Example output
 
 ```
+~/enact $ sudo ./enact
+
 === EnactTrust TPM Updater === (version 1.0.0) 
 
 Starting EnactTrust...    Success
-Downloading TPM update... Success
+Downloading TPM update package... Success
+Downloading TPM update license... Success
+	 *** This TPM is manufactured by IFX ***
+	 *** Please read the vendor license  ***
+	 *** available as TPMlicense.txt     ***
 TPM update start
 TPM update: Extracting...
 Found group 00000004
@@ -123,7 +121,7 @@ Wrote 925871 bytes to IFXdata.bin
 Infineon Firmware Update Tool
 Mfg IFX (1), Vendor SLB9672, Fw 15.24 (0x4a0a)
 Operational mode: Normal TPM operational mode (0x0)
-KeyGroupId 0x4, FwCounter 1252 (253 same)
+KeyGroupId 0x4, FwCounter 1248 (249 same)
 Firmware Update (normal mode):
 Firmware Update Complete
 
@@ -151,6 +149,14 @@ The Linux version of EnactTrust uses:
 - [libcurl](https://github.com/curl/curl) 
 
 The `embedded` version of EnactTrust uses no external dependencies.
+
+## Our Story
+
+The original concept of EnactTrust emerged during 2017 and involves the largest trade fair for embedded systems - "Embedded World" in Nuremberg, Germany. For the very first time there was a dedicated Trusted Platform Module (TPM) track. Presenters included managers from ARM, OnSemi and other industry leaders. Surprisingly, no one from the five speakers talked about Trusted Computing or mentioned the use of TPM 2.0 modules.
+
+Today, TPM 2.0 modules are used everywhere and we are seeing the rising adoption of TPM 2.0 in embedded systems: EV Chargers, Smart Metering, etc.
+
+In early 2018, DesignFirst was founded. Our company solve the struggles with using hardware security and Trusted Platform Modules.
 
 ## Contact us
 
