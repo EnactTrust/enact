@@ -1,7 +1,13 @@
 
 # Painless TPM updates
 
-[DesignFirst](https://designfirst.ee) offers the world's first TPM update service - EnactTrust.
+[DesignFirst](https://designfirst.ee) offers the world's first TPM update service - EnactTrust. Try now on your Linux board:
+
+`wget https://github.com/EnactTrust/enact/releases/download/v1.0.0/enact`
+
+Then just run `sudo ./enact`. No account required, no libs, no compilation, a beautiful TPM update in one step.
+
+Note: sudo is required on some Linux distributions for access to the TPM device.
 
 ## Easy updates for Trusted Platform Modules 2.0
 
