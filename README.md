@@ -5,7 +5,11 @@
 
 ## Easy updates for Trusted Platform Modules 2.0
 
-EnactTrust performs TPM 2.0 updates without manual steps.
+EnactTrust performs TPM 2.0 updates without manual steps. In comparision, other tools require multiple manual steps. Enact does everything in a single step.
+
+[Download here](https://github.com/EnactTrust/enact/releases) a static binary of `enact` that works on any modern ARM platform with Linux. The source code of this version is available in this GitHub repository.
+
+Our embedded variant for RTOS environments is proprietary and requires a license. Contact us at our [email](mailto:info@enacttrust.com) for more information.
 
 ## Supported Hardware
 
