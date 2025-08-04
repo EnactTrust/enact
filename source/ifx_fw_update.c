@@ -165,7 +165,6 @@ exit:
 
     XFREE(fwinfo.firmware_buf, NULL, DYNAMIC_TYPE_TMP_BUFFER);
     XFREE(fwinfo.manifest_buf, NULL, DYNAMIC_TYPE_TMP_BUFFER);
-    wolfTPM2_Cleanup(&dev);
 
     return rc;
 }
