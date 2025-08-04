@@ -29,8 +29,8 @@
     extern "C" {
 #endif
 
-#define ENACT_VERSION_STRING "1.0.0"
-#define ENACT_VERSION_HEX 0x00100000
+#define ENACT_VERSION_STRING "1.0.1"
+#define ENACT_VERSION_HEX 0x00100010
 
 #define DEBUG_NO_TPM 0
 
