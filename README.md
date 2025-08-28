@@ -3,7 +3,7 @@
 
 [DesignFirst](https://designfirst.ee) offers the world's first TPM update service - EnactTrust. Try now on your Linux board:
 
-`wget https://github.com/EnactTrust/enact/releases/download/v1.0.0/enact`
+`wget https://github.com/EnactTrust/enact/releases/download/v1.0.1/enact`
 
 Then just run `sudo ./enact`. No account required, no libs, no compilation, a beautiful TPM update in one step.
 
@@ -113,7 +113,7 @@ By default `EnactTrust` works without the need for a user account.
 ```
 ~/enact $ sudo ./enact
 
-=== EnactTrust TPM Updater === (version 1.0.0) 
+=== EnactTrust TPM Updater === (version 1.0.1)
 
 Starting EnactTrust...    Success
 Downloading TPM update package... Success
