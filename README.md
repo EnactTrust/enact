@@ -1,32 +1,40 @@
-
 # Painless TPM updates
 
-[DesignFirst](https://designfirst.ee) offers the world's first TPM update service - EnactTrust. Try now on your Linux board:
+[DesignFirst](https://designfirst.ee) offers the world's first TPM update service - EnactTrust.
 
-`wget https://github.com/EnactTrust/enact/releases/download/v1.0.1/enact`
+Two flavors:
 
-Then just run `sudo ./enact`. No account required, no libs, no compilation, a beautiful TPM update in one step.
+* RTOS & Baremetal - [Contact us](mailto:info@enacttrust.com)
+* Linux - this repository
 
-Note: sudo is required on some Linux distributions for access to the TPM device.
+## Quick start
 
-## Easy updates for Trusted Platform Modules 2.0
+Try now on your Linux board. Download:
 
-EnactTrust performs TPM 2.0 updates without manual steps. In comparision, other tools require multiple manual steps. Enact does everything in a single step.
+`wget https://github.com/EnactTrust/releases/download/v1.0.1/enact`
 
-[Download here](https://github.com/EnactTrust/enact/releases) a static binary of `enact` that works on any modern ARM platform with Linux. The source code of this version is available in this GitHub repository.
+and run `sudo ./enact`. No account required, no compilation, it is that easy.
 
-Our embedded variant for RTOS environments is proprietary and requires a license. Contact us at our [email](mailto:info@enacttrust.com) for more information.
+Note: sudo is required on some Linux systems for access to the TPM device.
 
 ## Supported Hardware
 
 * Infineon
   * SLB 9672
   * SLB 9673
-  * SLB 9670 (BETA, contact us)
+  * SLB 9670, SLI 9670, SLM 9670 (BETA, contact us)
 * Nuvoton
   * NPCT7xx (Requires approval, contact us)
 
 Contact us at our [email](mailto:info@enacttrust.com).
+
+## How is EnactTrust different?
+
+EnactTrust performs TPM 2.0 updates without manual steps. In comparision, other tools require multiple manual steps. Enact does everything in a single step.
+
+[Download here](https://github.com/EnactTrust/releases) a static binary of `enact` that works on any modern ARM platform with Linux. The source code of this version is available in this GitHub repository.
+
+Our embedded variant for RTOS environments is proprietary and requires a license. Contact us at our [email](mailto:info@enacttrust.com) for more information.
 
 ## Software variants
 
@@ -44,11 +52,11 @@ For example:
 
 We offer update bundles for systems without internet connectivity. Contact us at our [email](mailto:info@enacttrust.com) for update bundles tailored to your systems.
 
-## Quick start for Linux
+## Building it yourself
 
 Follow these three steps:
 
-1) Make sure your build system is set up
+1. Make sure your build system is set up
 
 ```
 sudo apt-get update
@@ -62,7 +70,7 @@ sudo apt-get install -y build-essential coreutils bsdmainutils git
 sudo apt-get install -y automake libtool libcurl4-openssl-dev libssl-dev
 ```
 
-2) Install the wolfTPM library
+2. Install the wolfTPM library
 
 Hashing the update manifest depends on having the wolfssl library
 
@@ -94,7 +102,7 @@ sudo make install
 sudo ldconfig
 ```
 
-3) Build and run EnactTrust
+3. Build and run EnactTrust
 
 ```
 git clone https://github.com/EnactTrust/enact.git
@@ -147,7 +155,6 @@ Your EnactTrust API token is sent to dimi@tpm.dev
 === Important - Reboot the system to finish the update ===
 
 Goodbye
-
 ```
 
 Let us know if you have any issues at our [email](mailto:info@enacttrust.com "contact us over email").
@@ -155,8 +162,9 @@ Let us know if you have any issues at our [email](mailto:info@enacttrust.com "co
 ## Built With
 
 The Linux version of EnactTrust uses:
-- [wolfTPM](https://github.com/wolfssl/wolfTPM) 
-- [libcurl](https://github.com/curl/curl) 
+
+* [wolfTPM](https://github.com/wolfssl/wolfTPM)
+* [libcurl](https://github.com/curl/curl)
 
 The `embedded` version of EnactTrust uses no external dependencies.
 
@@ -166,10 +174,10 @@ The original concept of EnactTrust emerged during 2017 and involves the largest 
 
 Today, TPM 2.0 modules are used everywhere and we are seeing the rising adoption of TPM 2.0 in embedded systems: EV Chargers, Smart Metering, etc.
 
-In early 2018, DesignFirst was founded. Our company solve the struggles with using hardware security and Trusted Platform Modules.
+In early 2018, DesignFirst was founded. Our company solve the struggles with using hardware security and Trusted Platform Modules. We proudly host TPM.dev, the largest forum dedicated to hardware security. DesignFirst is an active member of the Trusted Computing Group (TCG) and we contribute to the Internet of Things (IoT) Workgroup.
 
 ## Contact us
 
-Send us an [email](mailto:info@enacttrust.com "contact us over email") with your questions and we will respond. Alternatively, you could also use [TPM.dev](https://www.tpm.dev "TPM.dev community forum") forum. 
+Send us an [email](mailto:info@enacttrust.com "contact us over email") with your questions and we will respond. Alternatively, you could also use [TPM.dev](https://www.tpm.dev "TPM.dev community forum") forum.
 
 DesignFirst OU, Copyright 2025
